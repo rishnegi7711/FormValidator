@@ -78,3 +78,12 @@ form.addEventListener('submit', function (e) {
     checkEmail(email);
     checkPasswordsMatch(password,password2);
 });
+
+
+username.addEventListener("blur",function(event){
+    checkLength(event.target.value,5,15);
+})
+
+password.addEventListener("blur",function(event){
+checkLength(event.target.value,5,15);
+})
